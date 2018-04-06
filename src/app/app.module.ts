@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {TranslateModule} from 'ng2-translate';
 
 import { AppComponent } from './app.component';
 
@@ -10,8 +10,12 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    TranslateModule.forRoot()
   ],
+  exports: [
+    TranslateModule
+],
   providers: [],
   bootstrap: [AppComponent]
 })
